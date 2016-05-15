@@ -14,7 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   websites, web apps, and even some games as well.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mingli039.github.io/webucation" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+twitter_username: IA_Webucation
 github_username:  mingli039
 
 # Build settings
