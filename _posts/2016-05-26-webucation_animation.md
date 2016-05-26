@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Webucation Animation"
+title:  Webucation Animation
 date:   2016-05-26 18:20:00 -0500
 ---
 [See how it animates here.](https://mingli039.github.io/animation)
