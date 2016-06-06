@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Webucation Color Application
+title:  Send a Response to Webucation
 ---
 [Submit a Survey!](http://bit.ly/1ZsdcLc)
 
