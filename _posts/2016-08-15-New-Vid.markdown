@@ -1,1 +1,10 @@
-https://youtu.be/cNAm0VZHRPE
+---
+layout: post
+title:  New Video is Up!
+---
+A new video is up on YouTube! This video is a tutorial that covers the basics of JavaScript canvas. You can use JavaScript canvas to create web applicattions, animations, as well as game development.
+
+
+JavaScript Canvas pt. 1
+
+[Check it out!](https://youtu.be/cNAm0VZHRPE)
