@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <style>
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1050px) {
         #section {
             display: none;   
         }
@@ -82,26 +82,10 @@ var load = function(){
            return width;
         }
         var iH = 200;
-        var Wi = 0;
-        if(contentWidth() > 1350){
-          Wi = 0; 
-        }
-        if(contentWidth() > 1250){
-          Wi = 1; 
-        }
-        if(contentWidth() > 1150){
-          Wi = 2; 
-        }
-        if(contentWidth() > 1050){
-          Wi = 3; 
-        }
-        if(contentWidth() > 1951){
-          Wi = 4; 
-        } else { Wi = 0}
         
         if(contentHeight() > iH-1+(35*(1/*Interval Number */-1))){
             //Row 1 => 7
-            for(var i = 0; i < 7-Wi; i++){
+            for(var i = 0; i < 7; i++){
                 ctx.beginPath();
                 ctx.arc(WIDTH-r-(2*r*i), r, r, 0, 2 * pi);
                 ctx.fillStyle = rc;
@@ -110,7 +94,7 @@ var load = function(){
             }
 
             //Row 2 => 6
-            for(var i = 0; i < 6-Wi; i++){
+            for(var i = 0; i < 6; i++){
                 ctx.beginPath();
                 ctx.arc(WIDTH-r-(2*r*i), (r*3), r, 0, 2 * pi);
                 ctx.fillStyle = rc;
@@ -119,7 +103,7 @@ var load = function(){
             }
 
             //Row 3 => 5
-            for(var i = 0; i < 5-Wi; i++){
+            for(var i = 0; i < 5; i++){
                 ctx.beginPath();
                 ctx.arc(WIDTH-r-(2*r*i), (r*5), r, 0, 2 * pi);
                 ctx.fillStyle = rc;
@@ -130,7 +114,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(2/*Interval Number */-1))){
         //Row 4 => 4
-        for(var i = 0; i < 4-Wi; i++){
+        for(var i = 0; i < 4; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*7), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -140,7 +124,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(3/*Interval Number */-1))){
         //Row 5 => 5
-        for(var i = 0; i < 5-Wi; i++){
+        for(var i = 0; i < 5; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*9), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -150,7 +134,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(3/*Interval Number */-1))){
         //Row 6 => 6
-        for(var i = 0; i < 6-Wi; i++){
+        for(var i = 0; i < 6; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*11), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -160,7 +144,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(4/*Interval Number */-1))){
         //Row 7 => 2
-        for(var i = 0; i < 2-Wi; i++){
+        for(var i = 0; i < 2; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*13), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -170,7 +154,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(5/*Interval Number */-1))){
         //Row 8 => 5
-        for(var i = 0; i < 5-Wi; i++){
+        for(var i = 0; i < 5; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*15), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -180,7 +164,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(6/*Interval Number */-1))){
         //Row 9 => 6
-        for(var i = 0; i < 6-Wi; i++){
+        for(var i = 0; i < 6; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*17), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -190,7 +174,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(7/*Interval Number */-1))){
         //Row 10 => 6
-        for(var i = 0; i < 6-Wi; i++){
+        for(var i = 0; i < 6; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*19), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -200,7 +184,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(8/*Interval Number */-1))){
         //Row 11 => 4
-        for(var i = 0; i < 4-Wi; i++){
+        for(var i = 0; i < 4; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*21), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -210,7 +194,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(9/*Interval Number */-1))){
         //Row 12 => 7
-        for(var i = 0; i < 7-Wi; i++){
+        for(var i = 0; i < 7; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*23), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -220,7 +204,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(10/*Interval Number */-1))){
         //Row 13 => 6
-        for(var i = 0; i < 6-Wi; i++){
+        for(var i = 0; i < 6; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*25), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -230,7 +214,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(11/*Interval Number */-1))){
         //Row 14 => 5
-        for(var i = 0; i < 5-Wi; i++){
+        for(var i = 0; i < 5; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*27), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -240,7 +224,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(12/*Interval Number */-1))){
         //Row 15 => 6
-        for(var i = 0; i < 6-Wi; i++){
+        for(var i = 0; i < 6; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*29), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -250,7 +234,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(13/*Interval Number */-1))){
         //Row 16 => 4
-        for(var i = 0; i < 4-Wi; i++){
+        for(var i = 0; i < 4; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*31), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -260,7 +244,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(14/*Interval Number */-1))){
         //Row 17 => 5
-        for(var i = 0; i < 5-Wi; i++){
+        for(var i = 0; i < 5; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*33), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -270,7 +254,7 @@ var load = function(){
 
         if(contentHeight() > iH-1+(35*(15/*Interval Number */-1))){
         //Row 18 => 5
-        for(var i = 0; i < 5-Wi; i++){
+        for(var i = 0; i < 5; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*35), r, 0, 2 * pi);
             ctx.fillStyle = rc;
@@ -280,7 +264,7 @@ var load = function(){
         
         if(contentHeight() > iH-1+(35*(16/*Interval Number */-1))){
         //Row 19 => 2
-        for(var i = 0; i < 2-Wi; i++){
+        for(var i = 0; i < 2; i++){
             ctx.beginPath();
             ctx.arc(WIDTH-r-(2*r*i), (r*37), r, 0, 2 * pi);
             ctx.fillStyle = rc;
