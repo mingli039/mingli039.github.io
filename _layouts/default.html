@@ -83,6 +83,21 @@ var load = function(){
         }
         var iH = 200;
         var Wi = 0;
+        if(contentWidth() > 1350){
+          Wi = 0; 
+        }
+        if(contentWidth() > 1250){
+          Wi = 1; 
+        }
+        if(contentWidth() > 1150){
+          Wi = 2; 
+        }
+        if(contentWidth() > 1050){
+          Wi = 3; 
+        }
+        if(contentWidth() > 1951){
+          Wi = 4; 
+        } else { Wi = 0}
         
         if(contentHeight() > iH-1+(35*(1/*Interval Number */-1))){
             //Row 1 => 7
@@ -277,7 +292,7 @@ var load = function(){
     main();
 }
 
-window.onload = function(){window.setInterval(function(){load()},1)}
+window.onload = function(){load()}
 
 </script>
 
